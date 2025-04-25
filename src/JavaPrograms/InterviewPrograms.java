@@ -36,6 +36,7 @@ public class InterviewPrograms {
         validateUserName1("Swara Saraf");
         System.out.println(Arrays.toString(getNewArray(a)));
         getCharacterCount();
+        generateRandomNumber();
     }
 
     private static Integer[] append(Integer[] arr, int element) {
@@ -142,7 +143,16 @@ public class InterviewPrograms {
             }
       }
 
+        
+        public static void generateRandomNumber() {
+        	Random r = new Random();
+        	int low = 1;
+        	int high = 6;
+        	int result = r.nextInt(high-low) + low;
+        	System.out.println("result ="+ result);
+        }
 
+        
 
 
 
