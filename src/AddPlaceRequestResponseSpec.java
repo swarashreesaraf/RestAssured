@@ -1,26 +1,18 @@
-import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.testng.annotations.Test;
+
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import pojo.AddPlace;
 import pojo.Location;
-
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-import files.ReUsableMethods;
-import files.payload;
-import groovyjarjarpicocli.CommandLine.Spec;
 
 public class AddPlaceRequestResponseSpec {
 	
