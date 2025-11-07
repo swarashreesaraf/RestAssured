@@ -38,6 +38,7 @@ public class InterviewPrograms {
 		getCharacterCount();
 		generateRandomNumber();
 		replaceDigitsWithLetters();
+		printSummationWithoutUsingLoop();
 	}
 
 	private static Integer[] append(Integer[] arr, int element) {
@@ -168,4 +169,10 @@ public class InterviewPrograms {
 
 	}
 
+	public static void printSummationWithoutUsingLoop() {
+		int n = 50;
+		int sum = n * (n + 1) / 2;
+		System.out.println("Sum from 1 to 50 is: " + sum);
+
+	}
 }
